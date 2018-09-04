@@ -18,10 +18,8 @@ a {
 .thumbnail-title {
   background: rgb(96, 125, 139);
   color: rgb(292, 238, 255);
-
   display: block;
   font-size: 18px;
-
   margin: 0;
   padding: 4px 10px;
 }
@@ -29,4 +27,5 @@ a {
 .thumbnail-item {
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  display: block;
 }
