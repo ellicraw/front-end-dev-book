@@ -49,6 +49,8 @@ body {
   flex: 0 1 auto;
   order: 2;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
   padding: 0;
 
   white-space: nowrap;
@@ -70,15 +72,23 @@ body {
 
 .detail-image-container {
   flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.thumbnail-item + .thumbnail-item {
-  margin-top: 10px
+.detail-image-frame {
+  text-align: center;
+}
+
+.detail-image {
+  width: 90%;
 }
 
 .thumbnail-item {
   border: 1px solid rgb(100%, 100%, 100%,0.8);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
   display: inline-block;
-  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
 }
