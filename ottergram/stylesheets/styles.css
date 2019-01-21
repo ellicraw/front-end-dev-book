@@ -63,8 +63,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
-
+  padding: 20px 0;
   white-space: nowrap;
   overflow-x: auto;
 }
@@ -92,6 +91,13 @@ body {
 .detail-image-frame {
   text-align: center;
   position: relative;
+
+  transition: transform 333ms cubic-bezier(1,.06,.28,1);
+}
+
+.is-tiny {
+  transform: scale(0.001);
+  transition: transform 0ms;
 }
 
 .detail-image {
@@ -139,6 +145,8 @@ body {
     flex-direction: column;
     order: 0;
     margin-left: 20px;
+
+    padding: 0 35px;
   }
 
 }
@@ -149,4 +157,10 @@ body {
   display: inline-block;
   min-width: 120px;
   max-width: 120px;
+
+  transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item:hover {
+  transform: scale(1.2);
 }
