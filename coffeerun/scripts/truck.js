@@ -28,5 +28,4 @@
 
   App.Truck = Truck;
   window.App = App;
-
 }) (window);
