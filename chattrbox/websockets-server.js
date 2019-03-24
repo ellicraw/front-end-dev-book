@@ -1,17 +1,15 @@
 var WebSocket = require('ws');
 var WebSocketServer = WebSocket.Server;
-var port  = 3001;
-
+var port = 3001;
 var ws = new WebSocketServer({
   port: port
 });
-
 var messages = [];
 
 console.log('websockets server started');
 
 ws.on('connection', function (socket) {
-  console.log('client connection established.');
+  console.log('client connection established');
 
   messages.forEach(function (msg) {
     socket.send(msg);

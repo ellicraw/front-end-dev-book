@@ -6,7 +6,7 @@ function init(url) {
 }
 
 function registerOpenHandler(handlerFunction) {
-  socket.onopen  = () => {
+  socket.onopen = () => {
     console.log('open');
     handlerFunction();
   };
@@ -18,7 +18,7 @@ function registerMessageHandler(handlerFunction) {
     let data = JSON.parse(e.data);
     handlerFunction(data);
   };
- }
+}
 
 function sendMessage(payload) {
   socket.send(JSON.stringify(payload));
